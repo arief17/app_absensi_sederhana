@@ -1,7 +1,7 @@
 <table class="table">
   <h4 class="mb-3">#Data Sekolah</h4>
   <a href="#" class="btn btn-primary btn-sm col-sm-3" data-bs-toggle="modal" data-bs-target="#datasekolah">Tambah Data</a>
-  <thead>
+  <thead> 
     <tr class="text-center">
       <th scope="col">#</th>
       <th scope="col">Aksi</th>
@@ -27,7 +27,7 @@
 
 <!-- Modal -->
 <div class="modal fade" id="datasekolah" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Form Input Data Sekolah</h5>
@@ -36,13 +36,31 @@
       <div class="modal-body">
 
 
-          
+        <!-- form tambah data -->
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Nama Sekolah</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="namasekolah">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Alamat Sekolah</label>
+              <textarea type="text" class="form-control" id="exampleInputPassword1" name="alamat"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">No Telpone</label>
+              <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="notelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email Sekolah</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+            </div>
 
+        </form>
 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary">Simpan</button>
       </div>
     </div>
   </div>
